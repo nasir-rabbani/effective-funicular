@@ -9,9 +9,7 @@ resource "aws_s3_bucket_policy" "harshit_bucket_policy" {
         {
             "Sid": "Stmt1609848558282",
             "Effect": "Allow",
-            "Principal": {
-                "AWS": "arn:aws:iam::333567660568:user/harshit"
-            },
+            "Principal": "*",
             "Action": "s3:Put*",
             "Resource": "arn:aws:s3:::harshit-bucket/*"
         }
